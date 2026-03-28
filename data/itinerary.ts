@@ -420,8 +420,8 @@ export interface Villa {
 }
 
 export const villas: Villa[] = [
-  { name: 'Kunye Lodge', guests: ['Darren A & Michael S', 'Sab R', 'Stuart C'] },
-  { name: 'Kierieklapper Lodge', guests: ['Summer H & Harry B', 'Lucas H & Abigail B', 'Michael T & Greg B', 'Tim J-M & Mark J-M', 'Ezann K'] },
+  { name: 'Kunye Lodge', guests: ['Darren A & Michael S', 'Sab R', 'Stuart C', 'Michael T & Greg B'] },
+  { name: 'Kierieklapper Lodge', guests: ['Summer H & Harry B', 'Lucas H & Abigail B', 'Tim J-M & Mark J-M', 'Ezann K'] },
   { name: 'Unit 15 / Mvubu Lodge 11', guests: ['Kitty V & Paul S', 'Julie C', 'Moira C & Vaughan C', 'Ashleigh T & Brendon T (& CJ)', 'Punita C (& Jia)', 'Kiran K & Nidhisha K'] },
   { name: 'Unit 19', guests: ['Michael W & James C', 'Brit P', 'Pav R & Lucas M', 'Samara B & Tom A'] },
   { name: 'Unit 20', guests: ['Alex M & Becca C', 'Andy R & Kat', 'Callan B & Joshua H-T', 'Will H & Peyton L'] },
