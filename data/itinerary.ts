@@ -41,24 +41,28 @@ export const days: Day[] = [
     activities: [
       {
         title: 'Arrival & Check-In',
-        description: 'Make your way to Johannesburg. Settle in and rest before the evening festivities.',
+        description: 'Settle in before the evening. Montecasino is the recommended base — a 10-minute Uber from Bryanston Country Club.',
       },
       {
-        time: '5:30pm',
+        time: '5:30pm – ~9:00pm',
         title: 'Welcome Drinks – Bryanston Country Club',
-        description: 'Kick off the trip with welcome drinks at the beautiful Bryanston Country Club. A chance for everyone to meet and get acquainted before the adventure begins.',
+        description: 'Casual drinks and light nibbles to watch the sunset. Eat lunch beforehand — it\'s platters, not a full dinner. Group Ubers to Greenhouse JHB afterwards.',
         tips: [
-          { type: 'info', text: 'Smart casual dress recommended.' },
+          { type: 'important', text: 'Gate code: 039059. Follow signs for "Darren & Michael – Welcome to Joburg" to the Homestead Room.' },
+          { type: 'important', text: 'Dress code: smart casual. Long pants for gentlemen — strictly enforced at both venues.' },
         ],
         links: [
-          { icon: '🗺️', label: 'Google Maps', href: 'https://maps.google.com/?q=Bryanston+Country+Club+Johannesburg' },
+          { icon: '🗺️', label: 'Bryanston Country Club', href: 'https://maps.google.com/?q=Bryanston+Country+Club+Johannesburg' },
         ],
       },
       {
-        title: 'Dinner – Greenhouse JHB',
-        description: 'Dinner at Greenhouse, one of Johannesburg\'s finest dining experiences. Expect seasonal, locally sourced cuisine in a stunning garden setting.',
+        title: 'Late Night – Hanging Gardens of Babylon @ Greenhouse JHB',
+        description: 'The inaugural "Hanging Gardens of Babylon" club night at Greenhouse JHB. Continue until late.',
+        tips: [
+          { type: 'important', text: 'Dress code: smart casual. Long pants strictly enforced here too.' },
+        ],
         links: [
-          { icon: '🗺️', label: 'Google Maps', href: 'https://maps.google.com/?q=Greenhouse+Johannesburg' },
+          { icon: '🎉', label: 'Event Details', href: 'https://www.greenhousejhb.co.za/events/hanging-gardens-of-babylon-feat-dean-fuel/' },
         ],
       },
     ],
@@ -72,28 +76,33 @@ export const days: Day[] = [
     emoji: '✈️',
     activities: [
       {
-        title: 'Fly to Kruger',
-        description: 'Morning flight from Johannesburg to Kruger Mpumalanga International Airport. Collect your hire cars and begin the drive to the lodges.',
+        time: '12:00pm',
+        title: 'Arrive – Kruger Mpumalanga Airport (MQP)',
+        description: 'Collect hire cars and drive as a group to Mjejane Private Game Reserve (~60 min). Do not drive from the airport at night due to roadworks.',
         tips: [
-          { type: 'info', text: 'Car rental is required for Kruger. Standard cars are fine; higher clearance is more comfortable on dirt roads.' },
-          { type: 'warning', text: 'Strictly obey all reserve speed limits — for safety and wildlife protection.' },
+          { type: 'info', text: 'Standard cars are fine — a 4x4 is not required, though higher clearance is more comfortable.' },
         ],
         links: [
-          { icon: '🗺️', label: 'Kruger Mpumalanga Airport', href: 'https://maps.google.com/?q=Kruger+Mpumalanga+International+Airport' },
+          { icon: '🚌', label: 'Airport Shuttle Options', href: 'https://www.kmiairport.co.za/shuttle-service-options/' },
         ],
       },
       {
-        title: 'Check-In – Mjejane Reserve',
-        description: 'Settle into your allocated lodge on the Mjejane Private Game Reserve. See your villa assignments in the Accommodation section below.',
+        title: 'Check-In – Mjejane Private Game Reserve',
+        description: 'Settle into your allocated villa. Do not walk between villas at night — animals are present. See villa allocations in the Accommodation section.',
         tips: [
-          { type: 'warning', text: 'Do NOT drink the tap water at Kruger — it is borehole water. Use bottled water for drinking and brushing teeth.' },
-          { type: 'important', text: 'No alcohol permitted inside Kruger National Park gates.' },
+          { type: 'important', text: 'Conservation levy: ZAR 350 per car payable by card on arrival (on top of accommodation already paid).' },
+          { type: 'important', text: 'Complete the vehicle registration Google Form before arrival (deadline: 23 March).' },
+          { type: 'warning', text: 'Do not drink the tap water — borehole water only. Use bottled water.' },
+        ],
+        links: [
+          { icon: '🗺️', label: 'Villas & Key Locations Map', href: 'https://www.google.com/maps/d/edit?mid=1x8qTLwViaRoBqGJ9Ish1Bd71ufQ9acw&usp=sharing' },
+          { icon: '📋', label: 'Vehicle Registration Form', href: 'https://forms.gle/7AqErevy9KEdeb4z5' },
         ],
       },
       {
         time: '5:30pm',
-        title: 'Dinner – Kunye Lodge',
-        description: 'Welcome dinner at Kunye Lodge. Relax, take in the African bush surroundings and enjoy the first of many incredible bush evenings.',
+        title: 'Dinner – Kunye Lodge (Braai)',
+        description: 'First of four nightly braais hosted at one of the lodges. Food provided; please bring your own drinks.',
       },
     ],
   },
@@ -108,10 +117,11 @@ export const days: Day[] = [
       {
         time: '6:00am',
         title: 'Morning Game Drive',
-        description: 'Early morning game drive — the best time to spot the Big Five. Meet your vehicle group at the designated meeting point. See game drive assignments below.',
+        description: 'Ranger-led drive — best time for Big Five sightings. Pickup at your villa; return by ~9:00am. See game drive vehicle assignments below.',
         tips: [
-          { type: 'info', text: 'Bring binoculars if you have them, plus a light jacket — it\'s cold at dawn.' },
-          { type: 'info', text: 'Wear neutral colours (khaki, beige, olive). Avoid bright whites or reds.' },
+          { type: 'info', text: 'Bring a light jacket — it\'s cold at dawn. Binoculars helpful but not essential.' },
+          { type: 'info', text: 'Cost ~ZAR 200 / GBP 9 / AUD 18 per person, added to your villa bill at checkout.' },
+          { type: 'warning', text: 'Let your vehicle leader know 24 hours in advance if you\'re not attending.' },
         ],
         links: [
           { icon: '📋', label: 'Game Drive Bookings (WhatsApp)', href: 'https://wa.me/27732789158' },
@@ -119,16 +129,20 @@ export const days: Day[] = [
       },
       {
         title: 'Free Afternoon',
-        description: 'Return to your lodge for breakfast, rest, and a swim. Enjoy the pool and the sounds of the bush.',
+        description: 'Relax at your villa, take a swim, or explore the reserve. A self-drive into Kruger National Park is possible without prebooking (not guaranteed).',
       },
       {
         time: '3:30pm',
         title: 'Optional Afternoon Game Drive',
-        description: 'An optional second game drive as the sun begins its descent. The golden hour light is spectacular for photography.',
+        description: 'Self-organised afternoon drive. Book directly with the reserve via WhatsApp — include your name and unit number.',
+        links: [
+          { icon: '📋', label: 'Book via WhatsApp', href: 'https://wa.me/27732789158' },
+        ],
       },
       {
-        title: 'Dinner – Kierieklapper Lodge',
-        description: 'Dinner at Kierieklapper Lodge. A relaxed bush dinner with fellow guests.',
+        time: '5:30pm',
+        title: 'Dinner – Kierieklapper Lodge (Braai)',
+        description: 'Second nightly braai. Food provided; bring your own drinks.',
       },
     ],
   },
@@ -142,33 +156,35 @@ export const days: Day[] = [
     activities: [
       {
         time: '5:30am',
-        title: 'Enter Kruger National Park – Self-Drive',
-        description: 'A full day self-drive safari inside Kruger National Park. Set off at first light through the park gates and explore at your own pace.',
+        title: 'Group Self-Drive – Enter Kruger National Park',
+        description: 'Full day self-drive into Kruger. Meet at the Mjejane Reserve gate at 5:30am. Reserved entry slot at Crocodile Bridge Gate between 5:30–7:30am.',
         tips: [
-          { type: 'warning', text: 'Conservation levy: ZAR 350 per car payable at the gate.' },
+          { type: 'important', text: 'Entry fees payable by card at the gate: ZAR 134 (SA nationals) / ZAR 602 / GBP 28 / AUD 53 (foreigners). Bring your passport (SA nationals may use ID).' },
+          { type: 'important', text: 'Exit before sunset — gates close ~6:00pm. A fine is levied for late departures.' },
           { type: 'important', text: 'No alcohol inside the park. Obey all speed limits.' },
-          { type: 'info', text: 'Download the SANParks app for maps, bird/animal lists, and sighting updates.' },
-        ],
-        links: [
-          { icon: '📋', label: 'Kruger Park Entry Form', href: 'https://www.sanparks.org/parks/kruger/' },
-          { icon: '🗺️', label: 'Kruger Park Map', href: 'https://maps.google.com/?q=Kruger+National+Park' },
+          { type: 'warning', text: 'Mobile reception is intermittent inside the park.' },
         ],
       },
       {
+        time: '~8:30–9:00am',
         title: 'Brunch – Nkuhlu Picnic Site',
-        description: 'Stop at the Nkuhlu picnic site on the banks of the Sabie River for a self-catered brunch. Incredible birdlife and regular hippo sightings from the deck.',
+        description: 'Group brunch on the banks of the Sabie River. Bring bacon, eggs, buns and oil from your starter pack — gas BBQs available to hire. Simple restaurant on site for those who prefer.',
         links: [
-          { icon: '🗺️', label: 'Nkuhlu Picnic Site', href: 'https://maps.google.com/?q=Nkuhlu+Picnic+Site+Kruger' },
+          { icon: '🗺️', label: 'Nkuhlu Picnic Site', href: 'https://maps.app.goo.gl/HnvqH5mT9y1tupJk9' },
         ],
       },
       {
-        title: 'Continue Self-Drive',
-        description: 'Spend the afternoon driving the southern Kruger loop roads. Check the SANParks sightings board at rest camps for recent Big Five locations.',
+        title: 'Lunch – Skukuza or Lower Sabie',
+        description: 'Eat at your own convenience at one of two recommended spots inside the park.',
+        links: [
+          { icon: '🍽️', label: 'Cattle Baron @ Skukuza', href: 'https://maps.app.goo.gl/8rPXqfDoPVtnaCVCA' },
+          { icon: '🍽️', label: 'Mugg & Bean Lower Sabie', href: 'https://share.google/NVSLLUybkuqEhk58Q' },
+        ],
       },
       {
         time: '7:00pm',
-        title: 'Dinner – Mvubu Lodge 11',
-        description: 'Dinner at Mvubu Lodge 11. A special bush evening with the group.',
+        title: 'Dinner – Mvubu Lodge 11 (Braai)',
+        description: 'Third nightly braai. Food provided; bring your own drinks.',
       },
     ],
   },
@@ -182,20 +198,20 @@ export const days: Day[] = [
     activities: [
       {
         title: 'Free Morning',
-        description: 'A relaxed morning at the lodge. Sleep in, take a dip, or enjoy a sunrise walk within the lodge grounds.',
+        description: 'Sleep in, take a dip, or enjoy a sunrise at the lodge. Last full day in the bush.',
       },
       {
         time: '3:30pm',
-        title: 'Sunset Game Drive',
-        description: 'Final game drive as the sun sets over the Lowveld. A magical way to say goodbye to the bush.',
+        title: 'Group Sunset Game Drive',
+        description: 'Final ranger-led game drive, ending with sunset drinks. Pickup at your villa.',
+        tips: [
+          { type: 'info', text: 'Same cost and booking process as Monday — ~ZAR 200/person added to villa bill.' },
+        ],
       },
       {
         time: '7:00pm',
-        title: 'Farewell Dinner – Kunye',
-        description: 'Last night in the bush — a farewell dinner at Kunye Lodge. Time to swap game drive stories and pack for the move to Cape Town.',
-        tips: [
-          { type: 'info', text: 'Pack your bags tonight — early departure tomorrow.' },
-        ],
+        title: 'Farewell Dinner – Kunye Lodge (Braai)',
+        description: 'Last night in the bush. Food provided; bring your own drinks. Pack tonight for the early departure tomorrow.',
       },
     ],
   },
@@ -210,26 +226,29 @@ export const days: Day[] = [
       {
         time: '11:00am',
         title: 'Check-Out & Drive to Airport',
-        description: 'Check out of your Mjejane lodge and drive to Kruger Mpumalanga Airport. Return hire cars.',
+        description: 'Check out of your villa — visit the on-site shop to complete the checkout process. Drive to Kruger Mpumalanga Airport and return hire cars.',
+        tips: [
+          { type: 'info', text: 'Check-in closes at 12:55pm — aim to leave by 11:00am.' },
+        ],
       },
       {
         time: '1:25pm',
         title: 'Flight to Cape Town',
-        description: 'Fly from Kruger to Cape Town International Airport.',
+        description: 'Fly from Kruger Mpumalanga (MQP) to Cape Town International Airport.',
       },
       {
         time: '4:05pm',
         title: 'Arrive Cape Town',
-        description: 'Land in Cape Town. Transfer to your accommodation and freshen up.',
+        description: 'Land in Cape Town. Transfer to Stellenbosch (~30–50 min by Uber or hire car, depending on traffic).',
         links: [
           { icon: '🗺️', label: 'Cape Town Airport', href: 'https://maps.google.com/?q=Cape+Town+International+Airport' },
         ],
       },
       {
-        title: 'First Thursdays – Cape Town',
-        description: 'Cape Town\'s famous First Thursdays event — galleries, restaurants and bars in the CBD stay open late. A fantastic introduction to the city\'s creative scene.',
-        tips: [
-          { type: 'info', text: 'De Waterkant and the V&A are great starting points. No bookings needed — just wander.' },
+        title: 'First Thursdays – Stellenbosch',
+        description: 'The group meets in Stellenbosch for First Thursdays — meeting point communicated closer to the time. For those staying in Cape Town, the parallel event is at Kloof Street House.',
+        links: [
+          { icon: '🍸', label: 'Kloof Street House (Cape Town)', href: 'https://www.kloofstreethouse.co.za/' },
         ],
       },
     ],
@@ -243,21 +262,35 @@ export const days: Day[] = [
     emoji: '🌊',
     activities: [
       {
-        time: '10:00am',
-        title: 'Die Strandloper – Langebaan',
-        description: 'Board the bus at 10am for the legendary Die Strandloper open-air seafood braai on the beach at Langebaan. One of South Africa\'s most unique and celebrated dining experiences — multiple courses of fresh seafood served over several hours on the beach.',
+        time: '9:30am',
+        title: 'Optional: Buy Drinks for Die Strandloper',
+        description: 'Liquor City and Checkers Liquor are a couple of minutes\' walk from the bus stop. Die Strandloper is BYOB with no corkage (but also has a bar).',
+      },
+      {
+        time: '10:00am sharp',
+        title: 'Bus Departs – Die Braak, Stellenbosch → Die Strandloper',
+        description: 'Bus leaves Die Braak at 10:00am sharp for a 12:00pm start at Die Strandloper, Langebaan. Ten courses of fresh seafood cooked on an open braai. Bring swimwear, beach towel and open-toed shoes.',
         tips: [
-          { type: 'info', text: 'Booking is essential — already arranged. Wear comfortable, casual clothes and shoes you don\'t mind getting sandy.' },
-          { type: 'info', text: 'Bring sunscreen and a light layer for the sea breeze.' },
+          { type: 'info', text: 'Set menu: R440 / GBP 20 / AUD 38. Transfer to Darren/Michael in advance — they will prepay for the group.' },
+          { type: 'info', text: 'Cape Town guests: Alexander Leighton (+44 7981 481607) has space leaving South Beach Camps Bay Hotel at 10am.' },
         ],
         links: [
+          { icon: '🗺️', label: 'Meeting Point – Die Braak', href: 'https://www.google.com/maps/place/33%C2%B056\'13.3%22S+18%C2%B051\'30.1%22E/@-33.937025,18.858366,17z' },
           { icon: '🗺️', label: 'Die Strandloper', href: 'https://maps.google.com/?q=Die+Strandloper+Langebaan' },
         ],
       },
       {
-        time: '5:00pm',
+        time: '~5:00pm',
+        title: 'Return to Stellenbosch',
+        description: 'Approximate return from Langebaan.',
+      },
+      {
+        time: '5:00pm – 9:00pm',
         title: 'Boschendal Night Market',
-        description: 'An evening at Boschendal\'s wonderful outdoor night market. Local food stalls, wine, live music, and the spectacular Boschendal Estate as a backdrop.',
+        description: 'Evening at Boschendal\'s outdoor night market — food stalls, wine and live music on a wine estate (~20 min from central Stellenbosch). Kelly-Rain Green hosting drinks in central Stellenbosch afterwards.',
+        tips: [
+          { type: 'important', text: 'Tickets are FREE but go on "sale" Monday 30 March only — watch for the reminder to book yours.' },
+        ],
         links: [
           { icon: '🗺️', label: 'Boschendal Estate', href: 'https://maps.google.com/?q=Boschendal+Estate+Franschhoek' },
         ],
@@ -274,23 +307,30 @@ export const days: Day[] = [
     activities: [
       {
         time: '8:00am',
-        title: 'Table Mountain',
-        description: 'Head up Table Mountain first thing to beat the crowds and catch the best visibility. Take the cable car up and hike any of the scenic paths across the top. Views over the Cape Peninsula are extraordinary.',
+        title: 'Table Mountain – Platteklip Gorge Hike',
+        description: 'Meet at the lower cable car station at 8am. Group hikes up via Platteklip Gorge (~2.5–3 hours). Hikers can cable car back down. Those who prefer not to hike can take the cable car both ways.',
         tips: [
-          { type: 'warning', text: 'Check the cable car status before you go — it closes in strong winds. Book tickets online to skip queues.' },
-          { type: 'info', text: 'Wear layers — it\'s significantly cooler and windier on top.' },
+          { type: 'important', text: 'Bring 1–2 litres of water per person — no hydration points on the way up.' },
+          { type: 'info', text: 'Cable car: R450 return / R295 one-way. Book online to skip queues (up to 3 hours without a booking).' },
+          { type: 'warning', text: 'Cable car closes in strong winds — check status before heading out.' },
         ],
         links: [
-          { icon: '🎟️', label: 'Book Cable Car', href: 'https://www.tablemountain.net/tickets' },
-          { icon: '🗺️', label: 'Google Maps', href: 'https://maps.google.com/?q=Table+Mountain+Aerial+Cableway' },
+          { icon: '🎟️', label: 'Book Cable Car Tickets', href: 'https://www.tablemountain.net/plan-your-visit/ticket-prices/' },
+          { icon: '🗺️', label: 'Lower Cable Car Station', href: 'https://maps.google.com/?q=Table+Mountain+Aerial+Cableway' },
         ],
       },
       {
-        title: 'V&A Waterfront – Afternoon',
-        description: 'Spend the afternoon at the V&A Waterfront — shopping, restaurants, bars and the harbour. A great spot for a leisurely lunch and exploring Cape Town\'s waterfront.',
+        title: 'Free Afternoon – V&A Waterfront',
+        description: 'Explore the V&A Waterfront — restaurants, shopping and the harbour. Recommended: Willoughby\'s (sushi) and the Two Oceans Aquarium.',
         links: [
           { icon: '🗺️', label: 'V&A Waterfront', href: 'https://maps.google.com/?q=V%26A+Waterfront+Cape+Town' },
         ],
+      },
+      {
+        time: '6:00pm',
+        title: 'Wedding Party Dinner (Wedding Party Only)',
+        description: 'Private dinner for the wedding party in Cape Town. Details communicated separately.',
+        dresscode: 'Smart — blazer/jacket for men.',
       },
     ],
   },
@@ -303,25 +343,35 @@ export const days: Day[] = [
     emoji: '🍷',
     activities: [
       {
-        title: 'Breakfast – Lanzerac',
-        description: 'A leisurely breakfast at the iconic Lanzerac Hotel in Stellenbosch. Set among the vineyards, it\'s one of the Cape Winelands\' most beautiful estates.',
+        time: '8:00am',
+        title: 'Breakfast – Lanzerac Wine Estate',
+        description: 'Optional leisurely breakfast at Lanzerac, close to central Stellenbosch. Opens at 8am.',
         links: [
           { icon: '🗺️', label: 'Lanzerac Hotel', href: 'https://maps.google.com/?q=Lanzerac+Hotel+Stellenbosch' },
         ],
       },
       {
+        time: '10:00–11:00am',
         title: 'Babylonstoren',
-        description: 'Visit Babylonstoren — a spectacular farm garden, one of the oldest Cape Dutch farms in the Franschhoek Valley. Explore the extraordinary garden, taste their produce, and have lunch at Babel restaurant.',
+        description: 'One of the Cape\'s most beautiful farms. Wine tasting, two restaurants, olive oil tasting (booking may be required) and stunning gardens. Open 9am–6pm.',
         links: [
           { icon: '🗺️', label: 'Babylonstoren', href: 'https://maps.google.com/?q=Babylonstoren+Farm+Franschhoek' },
         ],
       },
       {
-        title: 'Wine Tasting – Warwick',
-        description: 'Wine tasting at Warwick Estate, famous for its exceptional red blends and the iconic Three Cape Ladies wine. Beautiful vineyard views and a relaxed setting.',
+        title: 'More Wine Estates',
+        description: 'Warwick is on the way back and worth a stop. Ernie Els and Spier are also highly recommended. Most estates need no reservation. Uber works well without a designated driver.',
+        tips: [
+          { type: 'info', text: 'Cape Town guests: Alexander Leighton (+44 7981 481607) has transport leaving South Beach Camps Bay in the early afternoon.' },
+        ],
         links: [
           { icon: '🗺️', label: 'Warwick Estate', href: 'https://maps.google.com/?q=Warwick+Wine+Estate+Stellenbosch' },
         ],
+      },
+      {
+        time: '5:30pm',
+        title: 'Family BBQ & Paul Smyth\'s Birthday (Family Only)',
+        description: 'Family braai and birthday celebration at Darren & Michael\'s accommodation. Details communicated separately.',
       },
     ],
   },
@@ -335,9 +385,9 @@ export const days: Day[] = [
     activities: [
       {
         title: 'Golf – Devonvale (Optional)',
-        description: 'Optional round of golf at Devonvale Golf & Wine Estate. A beautiful 18-hole course set in the Bottelary Hills.',
+        description: 'Optional 9 or 18 holes at Devonvale Golf Course. Cost: R1,500 for 18 holes; R500 for club hire. Contact Stuart Chamberlain to join.',
         tips: [
-          { type: 'info', text: 'Contact Stuart Chamberlain to join: +27 83 309 3245' },
+          { type: 'info', text: 'Contact Stuart Chamberlain: +27 83 309 3245 (WhatsApp).' },
         ],
         links: [
           { icon: '🗺️', label: 'Devonvale Golf Estate', href: 'https://maps.google.com/?q=Devonvale+Golf+Estate+Stellenbosch' },
@@ -345,7 +395,7 @@ export const days: Day[] = [
       },
       {
         title: 'Free Day',
-        description: 'A free day to rest, explore Stellenbosch town, visit more wine estates, or simply relax before the big day tomorrow. The town centre has excellent restaurants, galleries, and boutique shops.',
+        description: 'No set plans — explore Stellenbosch, hit the beach, tour Robben Island, visit Boulders Beach (African Penguins), browse art galleries, or do more wine tasting.',
         tips: [
           { type: 'info', text: 'Get a good night\'s sleep — the wedding starts at 3pm tomorrow.' },
         ],
@@ -362,28 +412,27 @@ export const days: Day[] = [
     activities: [
       {
         title: 'Morning – Rest & Get Ready',
-        description: 'A relaxed morning to get ready for the wedding. Enjoy breakfast at your accommodation.',
+        description: 'A relaxed morning to get ready for the big day.',
       },
       {
         time: '3:00pm',
         title: '💍 The Wedding – Cavalli Estate',
-        description: 'The wedding of Darren & Michael at the magnificent Cavalli Estate. Arrive by 3pm. The ceremony, cocktails, dinner and dancing await.',
-        dresscode: 'Smart/Formal — garden setting, keep heels in mind (there may be lawn). Embrace the Cape summer.',
+        description: 'The wedding of Darren & Michael at Cavalli Estate. Ceremony at 3pm, cocktail hour from 4:30pm, followed by dinner and dancing. Children welcome at the ceremony; adults only from the cocktail hour onwards.',
+        dresscode: 'Black tie (tuxedo) or cocktail dress.',
         tips: [
           { type: 'important', text: 'Please arrive by 3pm — the ceremony begins promptly.' },
-          { type: 'info', text: 'Shuttles will be running from 11pm to 3am — no one needs to worry about driving home.' },
+          { type: 'info', text: 'Cavalli is ~15 min drive from central Stellenbosch. Uber is widely available.' },
+          { type: 'info', text: 'Childcare available — contact Wineland Nannies directly, mentioning Cavalli Estate on 7 April 2026.' },
         ],
         links: [
+          { icon: '💒', label: 'Wedding Website', href: 'https://www.theknot.com/us/darren-allingham-and-michael-smyth-apr-2026' },
           { icon: '🗺️', label: 'Cavalli Estate', href: 'https://maps.google.com/?q=Cavalli+Estate+Stellenbosch' },
         ],
       },
       {
         time: '11:00pm – 3:00am',
         title: 'Shuttles Home',
-        description: 'Shuttles running throughout the night from Cavalli Estate back to your accommodation.',
-        tips: [
-          { type: 'info', text: 'Contact Alexander Leighton for Cape Town transport queries: +44 7981 481607' },
-        ],
+        description: 'Shuttles running at regular intervals between Cavalli Estate and the recommended accommodation. No need to worry about a lift home.',
       },
     ],
   },
@@ -398,17 +447,14 @@ export const days: Day[] = [
       {
         time: '9:30am – 12:00pm',
         title: 'Recovery Breakfast – TERRA Rooftop',
-        description: 'A laid-back morning-after breakfast at TERRA rooftop. Relive the highlights, say your goodbyes, and ease into the journey home.',
-        tips: [
-          { type: 'info', text: 'Come as you are — sunglasses and coffee are the dress code.' },
-        ],
+        description: 'Laid-back morning-after breakfast at TERRA rooftop in Stellenbosch. Come as you are, relive the highlights, and say your goodbyes.',
         links: [
           { icon: '🗺️', label: 'TERRA Rooftop', href: 'https://maps.google.com/?q=TERRA+Rooftop+Stellenbosch' },
         ],
       },
       {
         title: 'Safe Travels',
-        description: 'Safe travels home, everyone. Thank you for sharing this adventure with Darren & Michael. What a trip.',
+        description: 'Safe travels home, everyone. Thank you for sharing this adventure with Darren & Michael.',
       },
     ],
   },
