@@ -1,26 +1,73 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --cream: #F5F0E8;
+  --ochre: #C8872A;
+  --terracotta: #A0522D;
+  --forest: #2D4A3E;
+  --sand: #E8D5B0;
+  --charcoal: #1A1A1A;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--cream);
+  color: var(--charcoal);
 }
+
+/* Noise grain overlay on hero */
+.grain-overlay::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.06'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  pointer-events: none;
+  z-index: 2;
+  mix-blend-mode: overlay;
+}
+
+/* Section dividers */
+.section-divider {
+  border: none;
+  border-top: 1px solid var(--ochre);
+  opacity: 0.4;
+  margin: 0;
+}
+
+/* Hero fade-up animations */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.8s ease forwards;
+}
+.animate-fade-up-d1 {
+  opacity: 0;
+  animation: fadeUp 0.8s ease 0.2s forwards;
+}
+.animate-fade-up-d2 {
+  opacity: 0;
+  animation: fadeUp 0.8s ease 0.5s forwards;
+}
+.animate-fade-up-d3 {
+  opacity: 0;
+  animation: fadeUp 0.8s ease 0.8s forwards;
+}
+
+/* Chevron bounce */
+@keyframes chevronBounce {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(8px); }
+}
+.animate-chevron {
+  animation: chevronBounce 1.6s ease-in-out infinite;
+}
+
+/* Scroll-triggered fade-in is handled via inline styles in DaySection */
